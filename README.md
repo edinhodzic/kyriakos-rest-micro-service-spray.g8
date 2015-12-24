@@ -32,7 +32,7 @@ This shouldn't even take a couple of minutes. Suppose we were implementing a use
 
 Apply this template with the `domain` template parameter set to `User`:
 
-    $ g8 https://github.com/otrl/otrl-rest-micro-service.g8 --domain=User
+    $ g8 https://github.com/otrl/otrl-rest-micro-service-spray.g8 --domain=User
 
 That creates a project in a `./otrl-service-user` directory. This directory contains the Sbt multi-module project as per the aforementioned project structure.
 
@@ -60,4 +60,5 @@ Please see the [OTRL REST service conventions](https://gist.github.com/otrl/rest
 # What's next?
 
 - [ ] resolve any `TODO`s above
+- [ ] write the aforementioned [OTRL REST service conventions](https://gist.github.com/otrl/rest-service-conventions) gist 
 - [ ] add a README.md to the generated project
