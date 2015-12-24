@@ -17,7 +17,7 @@ import spray.httpx.unmarshalling.Unmarshaller
 
 import scala.language.postfixOps
 
-case class $domain$(name: String) extends Identifiable
+case class $domain$(data: String) extends Identifiable
 
 object $domain$ {
 
@@ -26,7 +26,7 @@ object $domain$ {
 
   implicit val $domain;format="lower"$Marshaller: Marshaller[$domain$] = Marshaller.of[$domain$](`application/json`) {
     ($domain;format="lower"$, contentType, marshallingContext) =>
-      val jsonString: String = s"""{ "name" : "\${$domain;format="lower"$ name}" }"""
+      val jsonString: String = s"""{ "data" : "\${$domain;format="lower"$ data}" }"""
       marshallingContext marshalTo HttpEntity(contentType, jsonString)
   }
 
@@ -35,8 +35,8 @@ object $domain$ {
       case HttpEntity.NonEmpty(contentType, data) =>
         val jsValue: JsValue = new String(data toByteArray).parseJson
         val fields: Map[String, JsValue] = jsValue.asJsObject.fields
-        val name: String = fields("name").convertTo[String]
-        $domain$(name)
+        val data: String = fields("data").convertTo[String]
+        $domain$(data)
     }
 
 }
