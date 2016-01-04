@@ -9,7 +9,7 @@ class DbObjectConverter extends Converter[$domain$, DBObject] {
 
   override def serialise($domain;format="lower"$: $domain$): DBObject =
     MongoDBObject.newBuilder
-      .+=("data" -> $domain;format="lower"$.name)
+      .+=("data" -> $domain;format="lower"$.data)
   .result()
 
   override def deserialise(dbObject: DBObject): $domain$ =

@@ -46,7 +46,13 @@ lazy val $domain;format="lower"$Service = project
     // otrl
     "io.otrl.library" % "otrl-lib-repository-h2_2.11" % "0.5.0-SNAPSHOT",
     "io.otrl.library" % "otrl-lib-repository-mongo_2.11" % "0.1.0-SNAPSHOT",
-    "io.otrl.library" % "otrl-lib-rest-spray_2.11" % "0.6.0-SNAPSHOT"
+    "io.otrl.library" % "otrl-lib-rest-spray_2.11" % "0.6.0-SNAPSHOT",
+    // kamon
+    "io.kamon" % "kamon-core_2.11" % "0.5.2",
+    "io.kamon" % "kamon-log-reporter_2.11" % "0.5.2", // TODO remove or turn off for production
+    "io.kamon" % "kamon-system-metrics_2.11" % "0.5.2",
+    // aspectj
+    "org.aspectj" % "aspectjweaver" % "1.8.7"
   ))
 
 lazy val $domain;format="lower"$Client = project

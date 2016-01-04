@@ -2,9 +2,11 @@
 <!--suppress XmlUnboundNsPrefix -->
 <configuration>
 
+  <conversionRule conversionWord="traceToken" converterClass="kamon.trace.logging.LogbackTraceTokenConverter"/>
+
   <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
     <encoder>
-      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{30}:%L - %msg%n</pattern>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] [%traceToken] %-5level %logger{30}:%L - %msg%n</pattern>
     </encoder>
   </appender>
 
