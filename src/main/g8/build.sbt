@@ -60,6 +60,6 @@ lazy val $domain;format="lower"$Client = project
   .settings(name := "$domain;format="lower"$-client")
   .dependsOn($domain;format="lower"$Domain)
   .settings(commonSettings: _*)
-//  .settings(libraryDependencies ++= Seq(
-//    "io.otrl.library" % "otrl-lib-client_2.11" % "0.5.0-SNAPSHOT",
-//  ))
+  .settings(libraryDependencies ++= Seq(
+    "io.otrl.library" % "otrl-lib-client_2.11" % "0.1.0-SNAPSHOT"
+  ))
