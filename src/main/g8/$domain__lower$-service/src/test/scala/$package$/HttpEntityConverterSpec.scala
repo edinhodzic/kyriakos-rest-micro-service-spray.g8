@@ -13,7 +13,7 @@ class HttpEntityConverterSpec extends SpecificationWithJUnit {
   "HTTP entity converter" should {
 
     "serialise a customer" in {
-      serialise(new $domain$("some data here")).asString must beEqualTo(json)
+      serialise($domain$("some data here")).asString must beEqualTo(json)
     }
 
     "deserialise a http entity" in {

@@ -11,7 +11,7 @@ class DbObjectConverterSpec extends SpecificationWithJUnit {
 
   "Db object converter" should {
     "convert a $domain$ to a db object" in {
-      val dbObject: DBObject = dbObjectConverter.serialise(new $domain$("some data here"))
+      val dbObject: DBObject = dbObjectConverter.serialise($domain$("some data here"))
       dbObject.get("data").toString must beEqualTo("some data here")
     }
     "convert a db object to a $domain$" in {
