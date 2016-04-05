@@ -13,7 +13,9 @@ Execute this:
     cd otrl-service-$domain;format="lower"$/
     env JAVA_OPTS="-Dkamon.auto-start=true" sbt "project $domain;format="lower"$Service" aspectj-runner:run
 
-Invoke CRUD and query operations on the service at `http://localhost:9001/$domain;format="lower"$` 
+Invoke CRUD and query operations on the service at `http://localhost:9001/$domain;format="lower"$`
+
+    TODO document rest endpoints; ping, health, + crud
 
 # Configuration
 
