@@ -20,7 +20,7 @@ object $domain$RestService extends App with SimpleRoutingApp {
   // private implicit val $domain;format="lower"$CrudRepository: CrudOperations[$domain$] = new KamonRepositoryWrapper(new $domain$CrudRepository(new DbObjectConverter)) // for mongo
 
   startServer(interface = "localhost", port = 9001) {
-    $domain$RestRouter.collectionRoute ~ $domain$RestRouter.itemRoute
+    $domain$RestRouter.pingRoute ~ $domain$RestRouter.collectionRoute ~ $domain$RestRouter.itemRoute
   }
 
 }
