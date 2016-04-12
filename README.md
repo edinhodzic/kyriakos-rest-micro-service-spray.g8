@@ -45,7 +45,7 @@ That creates a project in a `./otrl-service-user` directory. This directory cont
 From the project root we can invoke an Sbt command to start the service which lives in the `user-service` module:
 
     cd otrl-service-user/
-    env JAVA_OPTS="-Dkamon.auto-start=true" sbt "project userService" aspectj-runner:run
+    sbt "project userService" aspectj-runner:run
 
 The above starts up the `io.otrl.service.user.UserRestService` Scala application which mixes in Spray's `SimpleRoutingApp` making the service available at `http://localhost:9001/user`.
 
