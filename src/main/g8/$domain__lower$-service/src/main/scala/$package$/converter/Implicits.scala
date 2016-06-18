@@ -3,7 +3,7 @@ package io.$org$.service.$domain;format="lower"$.converter
 import com.typesafe.scalalogging.LazyLogging
 import io.$org$.domain.$domain;format="lower"$.$domain$
 import io.$org$.domain.$domain;format="lower"$.$domain$._
-import io.otrl.library.crud.Converter
+import io.kyriakos.library.crud.Converter
 import spray.http.HttpEntity
 import spray.httpx.marshalling._
 import spray.httpx.unmarshalling._

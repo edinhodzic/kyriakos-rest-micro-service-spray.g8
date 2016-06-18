@@ -1,6 +1,6 @@
 package io.$org$.domain.$domain;format="lower"$
 
-import io.otrl.library.domain.Identifiable
+import io.kyriakos.library.domain.Identifiable
 import spray.http.ContentTypes.`application/json`
 import spray.http.{ContentTypeRange, HttpEntity, MediaTypes}
 import spray.httpx.marshalling.Marshaller

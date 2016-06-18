@@ -2,8 +2,8 @@ package io.$org$.service.$domain;format="lower"$
 
 import akka.actor.ActorSystem
 import io.$org$.domain.$domain;format="lower"$.$domain$
-import io.otrl.library.crud.kamon.KamonRepositoryWrapper
-import io.otrl.library.crud.CrudOperations
+import io.kyriakos.library.crud.kamon.KamonRepositoryWrapper
+import io.kyriakos.library.crud.CrudOperations
 import io.$org$.service.$domain;format="lower"$.converter.Implicits.HttpEntityConverter
 import io.$org$.service.$domain;format="lower"$.converter.DbObjectConverter
 import io.$org$.service.$domain;format="lower"$.repository.$domain$CrudRepository

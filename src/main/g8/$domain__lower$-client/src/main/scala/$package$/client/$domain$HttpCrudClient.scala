@@ -2,7 +2,7 @@ package io.$org$.client.$domain;format="lower"$
 
 import akka.actor.ActorSystem
 import io.$org$.domain.$domain;format="lower"$.$domain$
-import io.otrl.library.client.AbstractHttpCrudClient
+import io.kyriakos.library.client.AbstractHttpCrudClient
 import scala.concurrent.ExecutionContext
 import scala.concurrent.ExecutionContext.Implicits.global
 

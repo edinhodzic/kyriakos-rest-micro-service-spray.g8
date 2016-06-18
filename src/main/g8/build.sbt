@@ -14,7 +14,7 @@ lazy val commonSettings = Seq(
     // scala
     "org.scala-lang" % "scala-library" % "2.11.7",
     // $org$
-    "io.otrl.library" % "otrl-lib-domain_2.11" % "0.5.0-SNAPSHOT",
+    "io.kyriakos.library" % "kyriakos-lib-domain_2.11" % "0.5.0-SNAPSHOT",
     // test
     "io.spray" % "spray-testkit_2.11" % "1.3.3" % "test",
     "org.specs2" % "specs2-core_2.11" % "3.6.6" % "test",
@@ -44,9 +44,9 @@ lazy val $domain;format="lower"$Service = project
   .settings(mainClass in Compile := Some("io.$org$.service.$domain;format="lower"$.$domain$RestService"))
   .settings(libraryDependencies ++= Seq(
     // $org$
-    "io.otrl.library" % "otrl-lib-repository-h2_2.11" % "0.5.0-SNAPSHOT",
-    "io.otrl.library" % "otrl-lib-repository-mongo_2.11" % "0.1.0-SNAPSHOT",
-    "io.otrl.library" % "otrl-lib-rest-spray_2.11" % "0.6.0-SNAPSHOT",
+    "io.kyriakos.library" % "kyriakos-lib-repository-h2_2.11" % "0.5.0-SNAPSHOT",
+    "io.kyriakos.library" % "kyriakos-lib-repository-mongo_2.11" % "0.1.0-SNAPSHOT",
+    "io.kyriakos.library" % "kyriakos-lib-rest-spray_2.11" % "0.6.0-SNAPSHOT",
     // kamon
     "io.kamon" % "kamon-core_2.11" % "0.5.2",
     "io.kamon" % "kamon-log-reporter_2.11" % "0.5.2", // TODO remove or turn off for production
@@ -61,5 +61,5 @@ lazy val $domain;format="lower"$Client = project
   .dependsOn($domain;format="lower"$Domain)
   .settings(commonSettings: _*)
   .settings(libraryDependencies ++= Seq(
-    "io.otrl.library" % "otrl-lib-client_2.11" % "0.1.0-SNAPSHOT"
+    "io.kyriakos.library" % "kyriakos-lib-client_2.11" % "0.1.0-SNAPSHOT"
   ))

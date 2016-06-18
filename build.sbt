@@ -4,10 +4,12 @@ resolvers += Resolver.url("typesafe", url("http://repo.typesafe.com/typesafe/ivy
 
 G8Keys.g8TestBufferLog := false
 
-lazy val otrlLibMicroServiceSprayTemplate = project.in(file("."))
+organization := "io.kyriakos.template"
+
+name := "kyriakos-rest-micro-service-spray"
+
+lazy val kyriakosLibMicroServiceSprayTemplate = project.in(file("."))
 
 scriptedLaunchOpts ++= sys.process.javaVmArguments.filter(
   a => Seq("-Xmx", "-Xms", "-XX", "-Dsbt.log.noformat").exists(a.startsWith)
 )
-
-publishTo := Some("OTRL" at "https://mvn.otrl.io")

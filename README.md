@@ -17,8 +17,8 @@ The packages and code it generates within those modules is also appropriately na
 
 The generated code is also minimal as it is based on abstractions found in the following libraries:
 
-- [`otrl-lib-rest-spray`](https://github.com/otrl/otrl-lib-rest-spray)
-- [`otrl-lib-repository-h2`](https://github.com/otrl/otrl-lib-repository-h2) / [`otrl-lib-repository-mongo`](https://github.com/otrl/otrl-lib-repository-mongo)
+- [`kyriakos-lib-rest-spray`](https://github.com/otrl/kyriakos-lib-rest-spray)
+- [`kyriakos-lib-repository-h2`](https://github.com/otrl/kyriakos-lib-repository-h2) / [`otrl-lib-repository-mongo`](https://github.com/otrl/otrl-lib-repository-mongo)
 
 # What's under the hood?
 
