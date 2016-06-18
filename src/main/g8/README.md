@@ -10,7 +10,7 @@ REST $domain;format="lower"$ micro service capable of CRUD and query operations.
 
 Execute this:
 
-    cd otrl-service-$domain;format="lower"$/
+    cd $org$-service-$domain;format="lower"$/
     sbt "project $domain;format="lower"$Service" run
 
 Invoke CRUD and query operations on the service at `http://localhost:9001/$domain;format="lower"$`

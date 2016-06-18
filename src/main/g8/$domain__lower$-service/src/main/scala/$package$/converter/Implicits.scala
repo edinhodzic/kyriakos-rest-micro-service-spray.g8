@@ -1,8 +1,8 @@
-package io.otrl.service.$domain;format="lower"$.converter
+package io.$org$.service.$domain;format="lower"$.converter
 
 import com.typesafe.scalalogging.LazyLogging
-import io.otrl.domain.$domain;format="lower"$.$domain$
-import io.otrl.domain.$domain;format="lower"$.$domain$._
+import io.$org$.domain.$domain;format="lower"$.$domain$
+import io.$org$.domain.$domain;format="lower"$.$domain$._
 import io.otrl.library.crud.Converter
 import spray.http.HttpEntity
 import spray.httpx.marshalling._

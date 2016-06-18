@@ -1,8 +1,8 @@
-package io.otrl.service.$domain;format="lower"$.converter
+package io.$org$.service.$domain;format="lower"$.converter
 
 import com.mongodb.casbah.commons.Imports.DBObject
 import com.mongodb.casbah.commons.MongoDBObject
-import io.otrl.domain.$domain;format="lower"$.$domain$
+import io.$org$.domain.$domain;format="lower"$.$domain$
 import org.specs2.mutable.SpecificationWithJUnit
 
 class DbObjectConverterSpec extends SpecificationWithJUnit {

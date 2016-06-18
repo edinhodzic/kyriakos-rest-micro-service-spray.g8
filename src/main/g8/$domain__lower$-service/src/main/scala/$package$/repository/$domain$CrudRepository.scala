@@ -1,5 +1,5 @@
-package io.otrl.service.$domain;format="lower"$.repository
-import io.otrl.domain.$domain;format="lower"$.$domain$
+package io.$org$.service.$domain;format="lower"$.repository
+import io.$org$.domain.$domain;format="lower"$.$domain$
 import io.otrl.library.repository.h2.AbstractH2CrudRepository
 
 class $domain$CrudRepository extends AbstractH2CrudRepository[$domain$]

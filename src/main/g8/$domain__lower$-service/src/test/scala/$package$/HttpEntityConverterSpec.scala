@@ -1,7 +1,7 @@
-package io.otrl.service.$domain;format="lower"$.$domain$
+package io.$org$.service.$domain;format="lower"$.$domain$
 
-import io.otrl.domain.$domain;format="lower"$.$domain$
-import io.otrl.service.$domain;format="lower"$.converter.Implicits.HttpEntityConverter.{deserialise, serialise}
+import io.$org$.domain.$domain;format="lower"$.$domain$
+import io.$org$.service.$domain;format="lower"$.converter.Implicits.HttpEntityConverter.{deserialise, serialise}
 import org.specs2.mutable.SpecificationWithJUnit
 import spray.http.ContentTypes._
 import spray.http.HttpEntity

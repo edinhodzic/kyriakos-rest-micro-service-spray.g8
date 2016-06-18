@@ -1,8 +1,8 @@
-package io.otrl.service.$domain;format="lower"$.converter
+package io.$org$.service.$domain;format="lower"$.converter
 
 import com.mongodb.DBObject
 import com.mongodb.casbah.commons.MongoDBObject
-import io.otrl.domain.$domain;format="lower"$.$domain$
+import io.$org$.domain.$domain;format="lower"$.$domain$
 import io.otrl.library.crud.Converter
 
 class DbObjectConverter extends Converter[$domain$, DBObject] {

@@ -1,4 +1,4 @@
-package io.otrl.domain.$domain;format="lower"$
+package io.$org$.domain.$domain;format="lower"$
 
 import io.otrl.library.domain.Identifiable
 import spray.http.ContentTypes.`application/json`
