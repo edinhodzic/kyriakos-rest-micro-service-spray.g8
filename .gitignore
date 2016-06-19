@@ -2,5 +2,6 @@ target/
 boot/
 lib_managed/
 src_managed/
+project/project/
 project/plugins/project/
 .idea
