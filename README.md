@@ -17,8 +17,8 @@ The packages and code it generates within those modules is also appropriately na
 
 The generated code is also minimal as it is based on abstractions found in the following libraries:
 
-- [`kyriakos-lib-rest-spray`](https://github.com/otrl/kyriakos-lib-rest-spray)
-- [`kyriakos-lib-repository-h2`](https://github.com/otrl/kyriakos-lib-repository-h2) / [`otrl-lib-repository-mongo`](https://github.com/otrl/otrl-lib-repository-mongo)
+- [`kyriakos-lib-rest-spray`](https://github.com/edinhodzic/kyriakos-lib-rest-spray)
+- [`kyriakos-lib-repository-h2`](https://github.com/edinhodzic/kyriakos-lib-repository-h2) / [`kyriakos-lib-repository-mongo`](https://github.com/edinhodzic/kyriakos-lib-repository-mongo)
 
 # What's under the hood?
 
@@ -36,7 +36,7 @@ This shouldn't even take a couple of minutes. Suppose we were implementing a use
 
 Apply this template with the `org` and `domain` template parameters set to `acme` and `User` respectively:
 
-    $ g8 https://github.com/otrl/otrl-rest-micro-service-spray.g8 --org=acme --domain=User
+    $ g8 https://github.com/edinhodzic/kyriakos-rest-micro-service-spray.g8 --org=acme --domain=User
 
 That creates a project in a `./acme-service-user` directory. This directory contains the Sbt multi-module project as per the aforementioned project structure.
 
