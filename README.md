@@ -38,7 +38,7 @@ This shouldn't even take a couple of minutes. Suppose we were implementing a use
 
 Apply this template with the `org` and `domain` template parameters set to `acme` and `User` respectively:
 
-    $ g8 https://github.com/edinhodzic/kyriakos-rest-micro-service-spray --org=acme --domain=User
+    $ g8 https://github.com/edinhodzic/kyriakos-rest-micro-service-spray.g8 --org=acme --domain=User
 
 That creates a project in a `./acme-service-user` directory. This directory contains the Sbt multi-module project as per the aforementioned project structure.
 
