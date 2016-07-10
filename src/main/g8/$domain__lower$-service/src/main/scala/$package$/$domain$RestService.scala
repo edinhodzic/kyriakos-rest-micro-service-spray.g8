@@ -7,20 +7,20 @@ import io.kyriakos.library.crud.CrudOperations
 import io.$org$.service.$domain;format="lower"$.converter.Implicits.HttpEntityConverter
 import io.$org$.service.$domain;format="lower"$.converter.DbObjectConverter
 import io.$org$.service.$domain;format="lower"$.repository.$domain$CrudRepository
-import io.$org$.service.$domain;format="lower"$.router.$domain$RestRouter
+import io.$org$.service.$domain;format="lower"$.router.$domain$CrudRouter
 import spray.routing.SimpleRoutingApp
 
 import scala.language.postfixOps
 
-object $domain$RestService extends App with SimpleRoutingApp {
+object $domain$CrudService extends App with SimpleRoutingApp {
 
-  private implicit val actorSystem = ActorSystem("$org$-$domain;format="lower"$-rest-service")
+  private implicit val actorSystem = ActorSystem("$org$-$domain;format="lower"$-crud-service")
 
   private implicit val $domain;format="lower"$CrudRepository: CrudOperations[$domain$] = new KamonRepositoryWrapper(new $domain$CrudRepository)
   // private implicit val $domain;format="lower"$CrudRepository: CrudOperations[$domain$] = new KamonRepositoryWrapper(new $domain$CrudRepository(new DbObjectConverter)) // for mongo
 
   startServer(interface = "localhost", port = 9001) {
-    $domain$RestRouter.pingRoute ~ $domain$RestRouter.versionRoute ~ $domain$RestRouter.collectionRoute ~ $domain$RestRouter.itemRoute
+    $domain$CrudRouter.pingRoute ~ $domain$CrudRouter.versionRoute ~ $domain$CrudRouter.collectionRoute ~ $domain$CrudRouter.itemRoute
   }
 
 }

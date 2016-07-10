@@ -1,6 +1,6 @@
 import sbt._
 
-name := "$org$-service-rest-$domain;format="lower"$"
+name := "$org$-service-crud-$domain;format="lower"$"
 
 version := "0.1.0-SNAPSHOT"
 
@@ -24,10 +24,10 @@ lazy val commonSettings = Seq(
   )
 )
 
-lazy val $domain;format="lower"$Parent = project.in(file("."))
-  .aggregate($domain;format="lower"$Domain, $domain;format="lower"$Service, $domain;format="lower"$Client)
+lazy val $domain;format="lower"$CrudParent = project.in(file("."))
+  .aggregate($domain;format="lower"$CrudDomain, $domain;format="lower"$CrudService, $domain;format="lower"$CrudClient)
 
-lazy val $domain;format="lower"$Domain = project
+lazy val $domain;format="lower"$CrudDomain = project
   .in(file("./$domain;format="lower"$-domain"))
   .settings(name := "$domain;format="lower"$-domain")
   .settings(commonSettings: _*)
@@ -37,12 +37,12 @@ lazy val $domain;format="lower"$Domain = project
     "com.typesafe.akka" % "akka-actor_2.11" % "2.4.1"
   ))
 
-lazy val $domain;format="lower"$Service = project
+lazy val $domain;format="lower"$CrudService = project
   .in(file("./$domain;format="lower"$-service"))
   .settings(name := "$domain;format="lower"$-service")
-  .dependsOn($domain;format="lower"$Domain)
+  .dependsOn($domain;format="lower"$CrudDomain)
   .settings(commonSettings: _*)
-  .settings(mainClass in Compile := Some("io.$org$.service.$domain;format="lower"$.$domain$RestService"))
+  .settings(mainClass in Compile := Some("io.$org$.service.$domain;format="lower"$.$domain$CrudService"))
   .settings(libraryDependencies ++= Seq(
     // $org$
     "io.kyriakos.library" % "kyriakos-lib-repository-h2_2.11" % "1.0.0",
@@ -56,10 +56,10 @@ lazy val $domain;format="lower"$Service = project
     "org.aspectj" % "aspectjweaver" % "1.8.6"
   ))
 
-lazy val $domain;format="lower"$Client = project
+lazy val $domain;format="lower"$CrudClient = project
   .in(file("./$domain;format="lower"$-client"))
   .settings(name := "$domain;format="lower"$-client")
-  .dependsOn($domain;format="lower"$Domain)
+  .dependsOn($domain;format="lower"$CrudDomain)
   .settings(commonSettings: _*)
   .settings(libraryDependencies ++= Seq(
     "io.kyriakos.library" % "kyriakos-lib-client_2.11" % "1.0.0"
