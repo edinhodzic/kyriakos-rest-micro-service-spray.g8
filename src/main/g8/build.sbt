@@ -11,6 +11,7 @@ lazy val commonSettings = Seq(
   version := "0.5.0-SNAPSHOT",
   scalaVersion := "2.11.7",
   resolvers += Resolver.url("edinhodzic", url("http://dl.bintray.com/edinhodzic/kyriakos"))(Resolver.ivyStylePatterns),
+  scalacOptions ++= Seq("-deprecation", "-feature"),
   libraryDependencies ++= Seq(
     // scala
     "org.scala-lang" % "scala-library" % "2.11.7",
