@@ -47,7 +47,7 @@ That creates a project in a `./acme-service-user` directory. This directory cont
 From the project root we can invoke an Sbt command to start the service which lives in the `user-service` module:
 
     cd acme-service-user/
-    sbt "project userService" aspectj-runner:run
+    sbt "project userCrudService" aspectj-runner:run
 
 The above starts up the `io.acme.service.user.UserRestService` Scala application which mixes in Spray's `SimpleRoutingApp` making the service available at `http://localhost:9001/user`.
 
