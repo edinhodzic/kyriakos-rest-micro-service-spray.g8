@@ -55,6 +55,8 @@ The above starts up the `io.acme.service.user.UserRestService` Scala application
 
 Below are the REST conventions and CRUD and query operations which you can now perform on this newly built service.
 
+### CRUD operations
+
 | Method | Description    | Collection URI HTTP responses      | Item URI HTTP responses            |
 |--------|----------------|------------------------------------|------------------------------------|
 | POST   | Create         | `201 Created` / `409 Conflict`?    | unsupported                        |
@@ -63,6 +65,13 @@ Below are the REST conventions and CRUD and query operations which you can now p
 | PATCH  | Partial update | unsupported                        | `204 No Content` / `404 Not Found` |
 | DELETE | Delete         | unsupported                        | `204 No Content` / `404 Not Found` |
 
+### Other operations
+
+| Method | Url path               | Description               |
+|--------|------------------------|---------------------------|
+| POST   | /{serviceName}/query   | Query resources           |
+| GET    | /{serviceName}/ping    | Service ping/heartbeat    |
+| GET    | /{serviceName}/version | Service version           |
 
 # Configuration
 
